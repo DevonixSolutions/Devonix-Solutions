@@ -1,0 +1,114 @@
+/** ===== Flex ===== **/
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        $device_name: breakpoint-name($breakpoint, $grid-breakpoints);
+
+        .flex#{$device_name}-row {
+            flex-direction: row;
+        }
+        .flex#{$device_name}-column {
+            flex-direction: column;
+        }
+        .flex#{$device_name}-row-reverse {
+            flex-direction: row-reverse;
+        }
+        .flex#{$device_name}-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .flex#{$device_name}-wrap {
+            flex-wrap: wrap;
+        }
+        .flex#{$device_name}-nowrap {
+            flex-wrap: nowrap;
+        }
+        .flex#{$device_name}-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+        .flex#{$device_name}-fill {
+            flex: 1 1 auto;
+        }
+        .flex#{$device_name}-grow-0 {
+            flex-grow: 0;
+        }
+        .flex#{$device_name}-grow-1 {
+            flex-grow: 1;
+        }
+        .flex#{$device_name}-shrink-0 {
+            flex-shrink: 0;
+        }
+        .flex#{$device_name}-shrink-1 {
+            flex-shrink: 1;
+        }
+
+        .justify-content#{$device_name}-start {
+            justify-content: flex-start;
+        }
+        .justify-content#{$device_name}-end {
+            justify-content: flex-end;
+        }
+        .justify-content#{$device_name}-center {
+            justify-content: center;
+        }
+        .justify-content#{$device_name}-between {
+            justify-content: space-between;
+        }
+        .justify-content#{$device_name}-around {
+            justify-content: space-around;
+        }
+
+        .align-items#{$device_name}-start {
+            align-items: flex-start;
+        }
+        .align-items#{$device_name}-end {
+            align-items: flex-end;
+        }
+        .align-items#{$device_name}-center {
+            align-items: center;
+        }
+        .align-items#{$device_name}-baseline {
+            align-items: baseline;
+        }
+        .align-items#{$device_name}-stretch {
+            align-items: stretch;
+        }
+
+        .align-content#{$device_name}-start {
+            align-content: flex-start;
+        }
+        .align-content#{$device_name}-end {
+            align-content: flex-end;
+        }
+        .align-content#{$device_name}-center {
+            align-content: center;
+        }
+        .align-content#{$device_name}-between {
+            align-content: space-between;
+        }
+        .align-content#{$device_name}-around {
+            align-content: space-around;
+        }
+        .align-content#{$device_name}-stretch {
+            align-content: stretch;
+        }
+
+        .align-self#{$device_name}-auto {
+            align-self: auto;
+        }
+        .align-self#{$device_name}-start {
+            align-self: flex-start;
+        }
+        .align-self#{$device_name}-end {
+            align-self: flex-end;
+        }
+        .align-self#{$device_name}-center {
+            align-self: center;
+        }
+        .align-self#{$device_name}-baseline {
+            align-self: baseline;
+        }
+        .align-self#{$device_name}-stretch {
+            align-self: stretch;
+        }
+    }
+}

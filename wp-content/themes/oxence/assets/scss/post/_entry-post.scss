@@ -1,0 +1,300 @@
+/** ===== Entry Post ===== **/
+.entry-post {
+    margin-bottom: 30px;
+
+
+
+    .entry-media {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        @include respond-below(c480) {
+            height: 240px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 0.3s;
+            transform: scale(1);
+        }
+    }
+
+    .entry-summary {
+        padding: 35px;
+        background-color: $color-white;
+        box-shadow: 0px 10px 60px 0px rgba(223, 223, 223, 0.5);
+
+        @include respond-between( lg, c1200 ) {
+            padding: 35px 30px;
+        }
+
+        @include respond-below( c480 ) {
+            padding: 30px;
+        }
+
+        .entry-title {
+            font-size: 20px;
+            margin: 0 0 20px;
+            line-height: 1.6;
+            word-wrap: break-word;
+            word-break: break-word;
+
+            @include respond-between( lg, c1200 ) {
+                font-size: 18px;
+            }
+
+            @include respond-below( lg ) {
+                font-size: 18px;
+            }
+
+            a {
+                display: block;
+            }
+        }
+
+        p {
+            margin: 0;
+
+            @include respond-below(c480) {
+                font-size: 15px;
+            }
+        }
+
+        .read-more {
+            color: $color-primary;
+            font: {
+                family: $font-primary;
+                size: 18px;
+                weight: 500;
+            }
+            display: inline-flex;
+            align-items: center;
+            margin-top: 30px;
+            transition: 0.3s;
+            line-height: 1;
+
+            @include respond-below( c1200 ) {
+                font-size: 16px;
+            }
+
+            @include respond-below( c480 ) {
+                font-size: 15px;
+            }
+
+            span {
+                text-decoration: underline;
+            }
+
+            i {
+                margin-left: 10px;
+                font-size: 80%;
+            }
+
+            &:hover {
+                color: $color-headline;
+            }
+        }
+    }
+
+    &.sticky {
+        .entry-summary {
+            background-color: $color-light;
+            box-shadow: none;
+            border-bottom: 4px solid $color-primary;
+        }
+    }
+
+    &.list-view {
+        display: flex;
+
+        @include respond-below(lg) {
+            flex-direction: column;
+        }
+
+        .entry-media {
+            flex: 0 0 40.311%;
+            max-width: 40.311%;
+            min-height: 100%;
+            height: auto;
+
+            @include respond-below(lg) {
+                height: 480px;
+                flex: 0 0 auto;
+                max-width: 100%;
+            }
+
+            @include respond-below(md) {
+                height: 320px;
+            }
+
+            @include respond-below(c480) {
+                height: 240px;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .entry-summary {
+            flex-grow: 1;
+            padding: 40px 60px;
+
+            @include respond-below(md) {
+                padding: 40px;
+            }
+
+            @include respond-below(c480) {
+                padding: 40px 30px;
+            }
+
+            .entry-title {
+                font-size: 26px;
+                line-height: 1.45;
+
+                @include respond-below( c1200 ){
+                    font-size: 24px;
+                }
+
+                @include respond-below(md) {
+                    font-size: 20px;
+                }
+
+                @include respond-below(c480) {
+                    font-size: 18px;
+                }
+            }
+
+            .entry-meta {
+                margin-bottom: 20px;
+            }
+        }
+
+        &.sticky {
+            .entry-summary {
+                border-bottom: 0;
+                border-right: 4px solid $color-primary;
+            }
+        }
+    }
+
+    &:hover {
+        .entry-media img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.entry-post-meta {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond-below( md ) {
+        font-size: 14px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        i {
+            margin-right: 8px;
+
+            &.fa-calendar-alt {
+                position: relative;
+                top: -1px;
+            }
+
+            &.fa-user {
+                position: relative;
+                top: -1px;
+            }
+        }
+
+        &:not(:last-child) {
+            &::after {
+                content: "";
+                background-color: $color-primary;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                margin: 0 20px;
+
+                @include respond-below(lg) {
+                    margin: 0 15px;
+                }
+
+                @include respond-below (md) {
+                    margin: 0 10px;
+                }
+
+                @include respond-below( c480 ) {
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+
+    .admin {
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        color: $color-body;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.right-sidebar,
+.left-sidebar {
+    .entry-post {
+        &.list-view {
+
+            @include respond-between(lg, c1200) {
+                flex-direction: column;
+            }
+
+            .entry-media {
+                @include respond-between(lg, c1200) {
+                    height: 420px;
+                    flex: 0 0 auto;
+                    max-width: 100%;
+                }
+            }
+
+            .entry-summary {
+                @include respond-above(c1200) {
+                    padding: 40px;
+                }
+
+                .entry-title {
+                    @include respond-above(c1200) {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

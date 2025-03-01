@@ -1,0 +1,30 @@
+/** ===== Footer ===== **/
+.site-footer {
+    &.default-footer {
+        background-color: $color-light;
+    }
+
+    .footer-widgets {
+        padding: 80px 0 30px;
+        border-bottom: 1px solid $color-border;
+
+        .widget-title {
+            padding: 0;
+            border: none;
+        }
+
+        .widget {
+            margin-bottom: 50px;
+        }
+    }
+
+    .footer-copyright {
+        font-size: 18px;
+        padding: 20px 0;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+}

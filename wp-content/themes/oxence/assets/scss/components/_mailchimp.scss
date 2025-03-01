@@ -1,0 +1,49 @@
+/** ===== Mailchimp ===== **/
+.oxence-mailchimp-wrapper {
+    position: relative;
+
+    input[type="email"] {
+        color: $color-body;
+
+        &:focus {
+            color: $color-headline;
+        }
+    }
+
+    &.button-bottom {
+        input[type=submit],
+        button[type=submit] {
+            margin-top: 15px;
+        }
+    }
+
+    &.button-inside {
+        background-color: $color-white;
+        border-radius: 7px;
+        padding: 10px;
+
+        .mc4wp-form-fields {
+            display: flex;
+
+            @include respond-below(c480) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        input[type="email"] {
+            padding: 0 20px;
+            height: 55px;
+            border: none;
+
+            @include respond-below(c480) {
+                text-align: center;
+            }
+        }
+
+        input[type=submit],
+        button[type=submit] {
+            padding: 18px 30px;
+        }
+    }
+}

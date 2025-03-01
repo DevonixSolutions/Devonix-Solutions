@@ -1,0 +1,88 @@
+/** ===== Advanced Heading ===== **/
+.oxence-advanced-heading {
+    line-height: 1;
+
+    .sub-heading {
+        display: inline-block;
+
+        .sub-heading-text {
+            color: $color-primary;
+            font: {
+                size: 18px;
+                weight: 700;
+            }
+            line-height: 1;
+            text: {
+                transform: capitalize;
+            }
+
+            @include respond-below(md) {
+                font-size: 16px
+            }
+        }
+
+        .dots {
+            display: inline-block;
+            line-height: 1;
+
+            span {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $color-primary;
+
+                &:nth-child(2) {
+                    margin: 0 2px;
+                }
+            }
+
+
+            &.dots-left {
+                float: left;
+                margin-right: 20px;
+
+                @include respond-below(md) {
+                    margin-right: 15px;
+                }
+            }
+
+            &.dots-right {
+                float: right;
+                margin-left: 20px;
+
+                @include respond-below(md) {
+                    margin-left: 15px;
+                }
+            }
+
+            &.dots-bottom {
+                margin-top: 5px;
+                display: block;
+            }
+
+            &::after {
+                content: "";
+                clear: both;
+            }
+        }
+
+        .arrow-line {
+            width: 95px;
+            margin-right: 12px;
+
+            @include respond-below(md) {
+                width: 80px;
+            }
+
+            svg {
+                fill: $color-primary;
+            }
+        }
+    }
+
+    .main-heading {
+        margin: 20px 0 0;
+        font-size: 45px;
+        line-height: 1.2;
+    }
+}

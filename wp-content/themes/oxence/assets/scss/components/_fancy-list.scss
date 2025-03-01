@@ -1,0 +1,44 @@
+/** ===== Fancy List ===== **/
+.oxence-fancy-list {
+    .list-item {
+        padding-left: 80px;
+        position: relative;
+        z-index: 1;
+
+        &:not(:last-child) {
+            margin-bottom: 35px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid $color-border;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            z-index: -1;
+        }
+
+        &::after {
+            background-color: transparent;
+            border: 1px solid $color-secondary;
+            left: 10px;
+            top: 10px;
+            z-index: 1;
+        }
+
+        .title {
+            font-size: 24px;
+            margin: 0 0 15px;
+        }
+
+        .description {
+            margin: 0;
+        }
+    }
+}

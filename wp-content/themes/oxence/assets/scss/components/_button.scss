@@ -1,0 +1,169 @@
+/** ===== Button ===== **/
+.oxence-button-wrapper {
+    line-height: 1;
+}
+
+.oxence-button {
+    position: relative;
+    z-index: 1;
+    font: {
+        family: $font-primary;
+        size: 16px;
+        weight: 600;
+    }
+    line-height: 1;
+    text: {
+        transform: capitalize;
+        decoration: none;
+    }
+    border-radius: 5px;
+    border: none;
+    background-color: $color-primary;
+    color: $color-white;
+    overflow: hidden;
+    padding: 18px 30px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @include respond-below(md) {
+        font-size: 15px;
+    }
+
+    .icon-align-right {
+        margin-left: 8px;
+        order: 15;
+    }
+
+    .icon-align-left {
+        margin-right: 8px;
+    }
+
+    .button-icon {
+        font-size: 90%;
+        line-height: 1;
+    }
+
+    .fas {
+        font: {
+            family: "Font Awesome 5 Pro";
+            weight: 400;
+        }
+        vertical-align: middle;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        z-index: -1;
+        background-color: $color-secondary;
+        transition: linear 0.2s;
+    }
+
+    &::after {
+        left: auto;
+        right: 0;
+    }
+
+    &:hover {
+        color: $color-white;
+    }
+
+    &.hover-normal {
+        &::before {
+            width: 100%;
+            height: 100%;
+            visibility: visible;
+            opacity: 0;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &.hover-left {
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    &.hover-right {
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &.hover-left-right {
+        &:hover {
+            &::before,
+            &::after {
+                width: 55%;
+            }
+        }
+    }
+
+    &.hover-top {
+        &::before {
+            width: 100%;
+            height: 0;
+        }
+
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+        }
+    }
+
+    &.hover-bottom {
+        &::after {
+            width: 100%;
+            height: 0;
+            top: auto;
+            bottom: 0;
+        }
+
+        &:hover {
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+
+    &.hover-top-bottom {
+        &::before {
+            width: 100%;
+            height: 0;
+        }
+
+        &::after {
+            width: 100%;
+            height: 0;
+            top: auto;
+            bottom: 0;
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+}

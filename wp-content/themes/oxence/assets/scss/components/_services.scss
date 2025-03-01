@@ -1,0 +1,83 @@
+/** ===== Services ===== **/
+.oxence-services {
+    .service-box {
+        position: relative;
+        padding: 40px;
+        background-color: $color-white;
+        border-radius: 7px;
+        line-height: 1;
+        text-align: center;
+        margin: 0 0 30px;
+        transition: 0.3s;
+
+        @include respond-between(lg, c1200) {
+            padding: 40px 30px;
+        }
+
+        @include respond-below(md) {
+            padding: 40px 30px;
+        }
+
+        .service-thumbnail {
+            margin-bottom: 35px;
+        }
+
+        .title {
+            font-size: 20px;
+            margin: 0;
+            line-height: 1.35;
+
+            @include respond-between(lg, c1350) {
+                font-size: 18px;
+            }
+
+            @include respond-below(c480) {
+                font-size: 18px;
+            }
+        }
+
+        .read-more-btn {
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+            line-height: 1;
+            color: $color-headline;
+            text-align: center;
+            margin-top: 22px;
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid $color-border;
+            border-radius: 7px;
+            padding: 18px 55px;
+
+            i {
+                margin-left: 8px;
+            }
+
+            &:hover {
+                background-color: $color-primary;
+                color: $color-white;
+                border-color: $color-white;
+            }
+
+            @include respond-between(lg, c1200) {
+                font-size: 15px;
+                padding: 18px 35px;
+            }
+
+            @include respond-below(c480) {
+                font-size: 15px;
+                padding: 18px 35px;
+            }
+        }
+    }
+
+    &.service-archive {
+        margin-bottom: -30px;
+
+        .service-box {
+            box-shadow: 0px 10px 40px 0px rgba(204, 204, 204, 0.25);
+        }
+    }
+}

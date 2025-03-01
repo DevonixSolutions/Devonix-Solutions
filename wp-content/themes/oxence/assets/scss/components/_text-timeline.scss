@@ -1,0 +1,57 @@
+/** ===== Text Timeline ===== **/
+.oxence-text-timeline {
+    .timeline-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+
+        @include respond-below(c480) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .timeline-star {
+        margin-right: 20px;
+
+        @include respond-below(lg) {
+            margin-right: 15px;
+        }
+
+        @include respond-below(c480) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        svg {
+            width: 45px;
+            height: 45px;
+            fill: #399648;
+
+            @include respond-below(lg) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .timeline-text {
+        color: #0c0c0c;
+        font: {
+            family: $font-secondary;
+            size: 22px;
+            weight: 700;
+        }
+        line-height: 1.4;
+        letter-spacing: -1px;
+
+        @include respond-below(lg) {
+            font-size: 20px;
+        }
+
+        @include respond-below(c480) {
+            font-size: 18px;
+        }
+    }
+}

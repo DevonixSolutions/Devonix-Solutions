@@ -1,0 +1,34 @@
+
+---Upload files---
+Content file was not uploaded. Error: No file provided.
+
+---Upload files---
+Redux file was not uploaded. Error: No file provided.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 600
+Files info:
+Site URL = http://localhost/myPersonalSites/webSirLight2Diff
+Data file = not defined!
+Widget file = C:\xampp\htdocs\myPersonalSites\webSirLight2Diff/wp-content/uploads/2024/12/widgets.wie
+Customizer file = C:\xampp\htdocs\myPersonalSites\webSirLight2Diff/wp-content/uploads/2024/12/customizer.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Primary Sidebar : 
+
+Search - No Title - Imported
+Categories - No Title - Imported
+*Oxence Recent Post - Latest News - Imported
+*Oxence CTA - Build Awesome Website/Template - Imported
+Tag Cloud - Popular Tags - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

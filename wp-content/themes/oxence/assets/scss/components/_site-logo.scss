@@ -1,0 +1,13 @@
+/** ===== Site Logo ===== **/
+.oxence-site-logo {
+    max-width: 180px;
+    font: {
+        size: 32px;
+        weight: 700;
+    }
+    line-height: 1;
+
+    a {
+        color: $color-headline;
+    }
+}

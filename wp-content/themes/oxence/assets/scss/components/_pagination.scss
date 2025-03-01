@@ -1,0 +1,83 @@
+/** ===== Pagination ===== **/
+.oxence-pagination {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 25px 0 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    clear: both;
+
+    li {
+        margin: 0 !important;
+    }
+
+    .page-numbers {
+        display: block;
+        height: 45px;
+        width: 45px;
+        margin: 5px 5px 0;
+        padding: 0;
+        color: $color-headline;
+        font: {
+            family: $font-primary;
+            weight: 500;
+            size: 16px;
+        }
+        line-height: 43px;
+        text-align: center;
+        border: 2px solid rgb(44, 44, 44, 0.071);
+        border-radius: 50%;
+        transition: 0.3s;
+
+        @include respond-below(md) {
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            line-height: 38px;
+        }
+
+        &.current,
+        &:not(.dots):hover {
+            color: $color-white;
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+}
+
+.page-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1;
+    clear: both;
+
+    .page-links-title {
+        color: $color-headline;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+
+    .post-page-numbers {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $color-border;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        margin-left: 5px;
+        color: $color-headline;
+        transition: 0.3s;
+
+        &:hover,
+        &.current {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+---Downloaded files---
+The import files for: Main Demo were successfully downloaded!
+Initial max execution time = 600
+Files info:
+Site URL = http://localhost/myPersonalSites/webSirLight2Diff
+Data file = C:\xampp\htdocs\myPersonalSites\webSirLight2Diff\wp-content\plugins\oxence-toolkit/includes/demo-config/demo/content.xml
+Widget file = C:\xampp\htdocs\myPersonalSites\webSirLight2Diff\wp-content\plugins\oxence-toolkit/includes/demo-config/demo/widgets.wie
+Customizer file = C:\xampp\htdocs\myPersonalSites\webSirLight2Diff\wp-content\plugins\oxence-toolkit/includes/demo-config/demo/customizer.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Primary Sidebar : 
+
+Search - No Title - Imported
+Categories - No Title - Imported
+*Oxence Recent Post - Latest News - Imported
+*Oxence CTA - Build Awesome Website/Template - Imported
+Tag Cloud - Popular Tags - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

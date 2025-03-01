@@ -1,0 +1,576 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Oxence\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-13 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: oxence"
+
+#: includes/admin/templates/requirements.php:254
+msgid " How to disable WP_DEBUG mode."
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:269
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/templates/welcome.php:30
+#, php-format
+msgid ""
+"%s is already installed and ready to use! Let's build something impressive."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:231
+msgid "- .We recommend setting memory to be at least 128MB"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:65
+msgid "- We recommend a minimum PHP version of "
+msgstr ""
+
+#: includes/admin/templates/requirements.php:173
+msgid "- We recommend minimum value: 128 MB."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:100
+#: includes/admin/templates/requirements.php:123
+#: includes/admin/templates/requirements.php:146
+msgid "- We recommend setting max execution time to at least "
+msgstr ""
+
+#: 404.php:14
+msgid "404"
+msgstr ""
+
+#. Description of the theme
+msgid "A Agency WordPress Theme"
+msgstr ""
+
+#: includes/classes/class-setup.php:137 includes/classes/class-setup.php:149
+msgid "Add widgets here."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:36
+msgid "Author"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:40
+msgid "Author URL"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:40
+msgid ""
+"Before submitting a ticket, please read the documentation. Probably, your "
+"issue already described."
+msgstr ""
+
+#: includes/library/required-plugin.php:34
+msgid "Breadcrumb NavXT"
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:318
+msgid "Browse Shop"
+msgstr ""
+
+#: includes/admin/templates/welcome.php:57
+#, php-format
+msgid ""
+"Check <a href=\"%s\">requirements</a> to avoid errors with your WordPress."
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:333
+msgid "Checkout"
+msgstr ""
+
+#: includes/classes/class-post-helper.php:90
+msgid "Comments "
+msgstr ""
+
+#: comments.php:39
+msgid "Comments (%)"
+msgstr ""
+
+#: comments.php:37
+msgid "Comments (0)"
+msgstr ""
+
+#: comments.php:38
+msgid "Comments (1)"
+msgstr ""
+
+#: comments.php:60
+msgid "Comments are closed."
+msgstr ""
+
+#: includes/library/required-plugin.php:29
+msgid "Contact Form 7"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:75
+msgid "Contact Us"
+msgstr ""
+
+#: template-parts/footer/footer-default.php:14
+msgid "Copyright © 2022. All rights reserved."
+msgstr ""
+
+#: includes/admin/templates/help-center.php:81
+msgid ""
+"Do You have some other questions? Need Customization? Pre-purchase questions?"
+" Ask it <a  target=\"_blank\"  href=\"mailto:12hasibur@gmail.com\">there!</a>"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:37
+msgid "Documentation"
+msgstr ""
+
+#: includes/library/required-plugin.php:16
+msgid "Elementor Website Builder"
+msgstr ""
+
+#: comments.php:79
+msgid "Email *"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:196
+msgid "Enabled"
+msgstr ""
+
+#: includes/classes/class-setup.php:147
+msgid "Footer Widgets"
+msgstr ""
+
+#: comments.php:78
+msgid "Full Name *"
+msgstr ""
+
+#: template-parts/header/header-default.php:20
+msgid "Get a Free Quote"
+msgstr ""
+
+#: template-parts/contents/content-none.php:20
+msgid "Get started here"
+msgstr ""
+
+#: includes/admin/class-admin-panel.php:71
+#: includes/admin/class-admin-panel.php:72
+msgid "Help Center"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:212
+msgid "Home URL"
+msgstr ""
+
+#. URI of the theme
+msgid "https://demo.webtend.net/wp/oxence"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/webtend"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:27
+msgid ""
+"If you did not find an answer to your question, feel free to contact us."
+msgstr ""
+
+#: includes/admin/templates/help-center.php:72
+msgid ""
+"If you did not find an answer to your question, submit a ticket with well "
+"describe your issue."
+msgstr ""
+
+#: includes/admin/templates/welcome.php:72
+msgid "Import demo content"
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:193
+msgid "In "
+msgstr ""
+
+#: includes/admin/templates/welcome.php:66
+msgid "Install Required and recommended plugins."
+msgstr ""
+
+#: template-parts/contents/content-none.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: includes/admin/templates/welcome.php:44
+#, php-format
+msgid ""
+"Just complete the steps below and you will be able to use all "
+"functionalities of %s theme by <a href=\"%s\" target=\"_blank\">WebTend</a>"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "label"
+msgid "Enter your keyword"
+msgstr ""
+
+#: template-parts/page-title.php:129
+msgid "Latest News"
+msgstr ""
+
+#: comments.php:76
+msgid "Leave a Comment"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:166
+msgid "Max upload size"
+msgstr ""
+
+#: includes/library/required-plugin.php:39
+msgid "MC4WP: Mailchimp for WordPress"
+msgstr ""
+
+#: template-parts/page-title.php:96
+msgid "Member Details"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:224
+msgid "Memory Limit"
+msgstr ""
+
+#: includes/classes/class-assets.php:52
+msgctxt "Merriweather"
+msgid "on"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:162
+msgid "MySql Version"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:21
+msgid "Need Help? Webtend Help Center Here"
+msgstr ""
+
+#: template-parts/page-title.php:45
+msgid "News Details"
+msgstr ""
+
+#: template-parts/contents/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: includes/library/required-plugin.php:49
+msgid "One Click Demo Import"
+msgstr ""
+
+#. Name of the theme
+#: template-parts/header/header-default.php:12
+#: template-parts/header/header-default.php:16
+msgid "Oxence"
+msgstr ""
+
+#: includes/classes/class-helper.php:277
+msgid "Oxence Body Color"
+msgstr ""
+
+#: includes/classes/class-helper.php:283
+msgid "Oxence Border Color"
+msgstr ""
+
+#: includes/classes/class-helper.php:271
+msgid "Oxence Headline Color"
+msgstr ""
+
+#: includes/classes/class-helper.php:289
+msgid "Oxence light Color"
+msgstr ""
+
+#: includes/classes/class-helper.php:259
+msgid "Oxence Primary Color"
+msgstr ""
+
+#: includes/classes/class-helper.php:265
+msgid "Oxence Secondary Color"
+msgstr ""
+
+#: includes/library/required-plugin.php:22
+msgid "Oxence Toolkit"
+msgstr ""
+
+#: includes/classes/class-helper.php:295
+msgid "Oxence White Color"
+msgstr ""
+
+#: template-parts/contents/content-page.php:16
+#: template-parts/contents/content-single.php:29
+msgid "Pages:"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:93
+msgid "PHP Max Execution Time Limit"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:116
+msgid "PHP Max Input Time"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:139
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:77
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:58
+msgid "PHP Version"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Find keyword"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:25
+msgid ""
+"Please read a <a target=\"_blank\" href=\"https://themeforest."
+"net/page/item_support_policy\">Support Policy</a> before submitting a ticket "
+"and make sure that your question related to our product issues."
+msgstr ""
+
+#: comments.php:84
+msgid "Post Comment"
+msgstr ""
+
+#: includes/classes/class-setup.php:165
+msgid "Primary Menu"
+msgstr ""
+
+#: includes/classes/class-setup.php:135
+msgid "Primary Sidebar"
+msgstr ""
+
+#: template-parts/page-title.php:79
+msgid "Project Details"
+msgstr ""
+
+#: template-parts/contents/content.php:17
+msgid "Read More"
+msgstr ""
+
+#: template-parts/contents/content-none.php:18
+msgid "Ready to publish your first post?."
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:301
+msgid "Remove this item"
+msgstr ""
+
+#: includes/classes/class-comment-walker.php:77
+msgid "Reply"
+msgstr ""
+
+#: includes/admin/class-admin-panel.php:62
+#: includes/admin/class-admin-panel.php:63
+msgid "Required Plugins"
+msgstr ""
+
+#: includes/admin/class-admin-panel.php:53
+#: includes/admin/class-admin-panel.php:54
+msgid "Requirements"
+msgstr ""
+
+#: 404.php:17
+msgid "Return To Home"
+msgstr ""
+
+#: includes/classes/class-assets.php:46
+msgctxt "Roboto"
+msgid "on"
+msgstr ""
+
+#: template-parts/page-title.php:131
+msgid "Search Results for: "
+msgstr ""
+
+#: includes/admin/templates/requirements.php:53
+msgid "Server Settings"
+msgstr ""
+
+#: template-parts/page-title.php:62
+msgid "Service Details"
+msgstr ""
+
+#: template-parts/contents/content-single.php:51
+msgid "Share"
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:269
+msgid "Shopping Cart"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:188
+msgid "SimpleXML"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:216
+msgid "Site Url"
+msgstr ""
+
+#: template-parts/contents/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: 404.php:15
+msgid "Sorry, This page is not found."
+msgstr ""
+
+#: includes/admin/templates/welcome.php:53
+msgid "Step 1"
+msgstr ""
+
+#: includes/admin/templates/welcome.php:64
+msgid "Step 2"
+msgstr ""
+
+#: includes/admin/templates/welcome.php:70
+msgid "Step 3"
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:327
+msgid "Subtotal"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:69
+msgid "Support forum"
+msgstr ""
+
+#: template-parts/contents/content-single.php:41
+msgid "Tags"
+msgstr ""
+
+#: 404.php:16
+msgid ""
+"The page you are looking for was moved, removed, renamed or might never "
+"existed."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:23
+msgid "Theme Config"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:28
+msgid "Theme Name"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:56
+msgid ""
+"There you can watch tutorial for main issues. How to import demo content? "
+"etc."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:192
+msgid ""
+"To ensure successful installation of demo content The SimpleXML extension "
+"should be installed on your web server. Please contact your hosting provider "
+"to install and activate SimpleXML extension."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:87
+msgid "To know how you to change this please check this guide"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:105
+#: includes/admin/templates/requirements.php:128
+#: includes/admin/templates/requirements.php:151
+#: includes/admin/templates/requirements.php:177
+#: includes/admin/templates/requirements.php:235
+msgid "To see how you can change this please check this guide"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:32
+#: includes/admin/templates/requirements.php:220
+msgid "Version"
+msgstr ""
+
+#: includes/admin/templates/welcome.php:25
+msgid "Version - "
+msgstr ""
+
+#: includes/admin/templates/help-center.php:53
+msgid "Video Tutorials"
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:332
+msgid "View Cart"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:43
+msgid "Visit Documentation"
+msgstr ""
+
+#: includes/admin/templates/help-center.php:59
+msgid "Watch Tutorials"
+msgstr ""
+
+#: comments.php:80
+msgid "Website"
+msgstr ""
+
+#. Author of the theme
+msgid "Webtend"
+msgstr ""
+
+#: includes/admin/class-admin-panel.php:45
+#: includes/admin/class-admin-panel.php:46
+msgid "Welcome"
+msgstr ""
+
+#: includes/admin/templates/welcome.php:21
+msgid "Welcome to"
+msgstr ""
+
+#: includes/library/required-plugin.php:44
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:207
+msgid "WordPress Settings"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:257
+msgid "WP_DEBUG is disabled."
+msgstr ""
+
+#: includes/admin/templates/requirements.php:252
+msgid "WP_DEBUG is enabled."
+msgstr ""
+
+#: comments.php:82
+msgid "Write Comment"
+msgstr ""
+
+#: includes/admin/templates/requirements.php:82
+msgid ""
+"You cannot upload images, themes and plugins that have a size bigger than "
+"this value: "
+msgstr ""
+
+#: includes/classes/class-woocommerce.php:317
+msgid "Your cart is empty"
+msgstr ""
+
+#: includes/classes/class-comment-walker.php:69
+msgid "Your comment is awaiting moderation."
+msgstr ""

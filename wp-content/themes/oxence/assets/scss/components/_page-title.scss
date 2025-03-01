@@ -1,0 +1,254 @@
+/** ===== Page Title ===== **/
+.page-title-area {
+    padding: 160px 0;
+    background-color: $color-light;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    @include respond-below(md) {
+        padding: 140px 0;
+    }
+
+    @include respond-below(c480) {
+        padding: 120px 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -175px;
+        bottom: 95px;
+        width: 770px;
+        height: 770px;
+        background-color: $color-white;
+        border-radius: 50%;
+        z-index: -2;
+
+        @include respond-below (lg) {
+            width: 550px;
+            height: 550px;
+        }
+
+        @include respond-below (md) {
+            left: -200px;
+        }
+
+        @include respond-below(c480) {
+            width: 450px;
+        }
+    }
+
+    .page-title {
+        font-size: 54px;
+        line-height: 1.3;
+        letter-spacing: -1px;
+        margin: 0 auto;
+        padding: 0 0 10px;
+        max-width: 80%;
+
+        @include respond-below(c1350) {
+            font-size: 48px;
+        }
+
+        @include respond-below(lg) {
+            font-size: 42px;
+            max-width: 100%;
+        }
+
+        @include respond-below(md) {
+            font-size: 38px;
+            max-width: 100%;
+        }
+
+        @include respond-below(c480) {
+            font-size: 28px;
+        }
+    }
+
+    .entry-post-meta {
+        justify-content: center;
+        margin: 22px 0 -10px;
+    }
+
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        line-height: 1.4;
+        font-size: 18px;
+        margin: 22px auto 0;
+        max-width: 90%;
+
+        @include respond-below(c1350) {
+            font-size: 16px;
+        }
+
+        &,
+        a {
+            color: $color-headline;
+        }
+
+        a:hover {
+            color: $color-primary;
+        }
+
+        .separator {
+            font-size: 95%;
+            margin: 0 15px;
+
+            i {
+                position: relative;
+                top: 1px;
+            }
+        }
+
+        span {
+            display: block;
+        }
+
+        .current-item {
+            color: $color-primary;
+        }
+    }
+
+    .page-title .last-word {
+        position: relative;
+        z-index: 1;
+    }
+
+    .svg-line-one {
+        position: absolute;
+        width: 180px;
+        right: -15px;
+        bottom: -32px;
+        z-index: -1;
+
+        svg {
+            fill: #16b4f2;
+        }
+
+        @include respond-below(c480) {
+            display: none;
+        }
+    }
+
+    .svg-line-two {
+        position: absolute;
+        left: 5%;
+        top: 40%;
+        width: 135px;
+        z-index: -1;
+        animation: effect-10 2s ease infinite alternate;
+
+        svg {
+            fill: #000;
+        }
+
+        @media (max-width:1700px) {
+            left: 8%;
+        }
+
+        @media (max-width:1500px) {
+            left: 5%;
+            top: 45%;
+        }
+
+        @include respond-below(c1200) {
+            left: 3%;
+        }
+
+        @include respond-below(lg) {
+            display: none;
+        }
+    }
+
+    .svg-line-three {
+        position: absolute;
+        right: 6%;
+        bottom: 15%;
+        width: 135px;
+        z-index: -1;
+        transform: rotate(-60deg);
+        animation: effect-4 8s infinite;
+
+        svg {
+            fill: #000;
+        }
+
+        @media (max-width:1500px) {
+            right: 3%;
+        }
+
+        @include respond-below(c1200) {
+            bottom: 10%;
+        }
+
+        @include respond-below(lg) {
+            display: none;
+        }
+    }
+
+    .dots-one {
+        position: absolute;
+        bottom: 20%;
+        left: 15%;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #16b4f2;
+        border-radius: 50%;
+        z-index: -1;
+        animation: effect-4 5s infinite;
+
+
+        @media (max-width:1500px) {
+            left: 15%;
+        }
+
+        @include respond-below(c1200) {
+            left: 13%;
+        }
+
+        @include respond-below(lg) {
+            left: 10%;
+            bottom: 10%;
+        }
+    }
+
+    .dots-two  {
+        position: absolute;
+        right: 14%;
+        top: 32%;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #f1b000;
+        border-radius: 50%;
+        z-index: -1;
+        animation: effect-6 10s infinite;
+
+        @media (max-width:1500px) {
+            right: 10%;
+        }
+
+        @include respond-below(lg) {
+           right: 30%;
+           right: 8%;
+        }
+    }
+}
+
+.absolute-header-on {
+    .page-title-area {
+        padding-top: 230px;
+
+        @include respond-below(md) {
+            padding-top: 180px;
+        }
+
+        @include respond-below(c480) {
+            padding-top: 160px;
+        }
+    }
+}

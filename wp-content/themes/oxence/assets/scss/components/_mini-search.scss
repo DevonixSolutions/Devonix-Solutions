@@ -1,0 +1,104 @@
+/** ===== Mini Search ===== **/
+.oxence-search-wrapper {
+    position: relative;
+
+    .search-btn {
+        font-size: 14px;
+        line-height: 1;
+        position: relative;
+        color: $color-headline;
+        height: 90px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        i {
+            transition: all 0.3s ease-out 0s;
+        }
+
+        .close {
+            position: absolute;
+            left: 50%;
+            opacity: 0;
+            transform-origin: center;
+            transform: translateX(-50%) scale(0);
+        }
+    }
+
+    .oxence-search-form {
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        right: 0;
+        width: 460px;
+        box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.1);
+        background-color: $color-white;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale3d(0.8, 0.8, 0.8);
+        transition: all 0.3s ease-out 0s;
+
+        @include respond-below(md) {
+            width: 320px;
+        }
+
+        @include respond-below(c480) {
+            width: 90%;
+        }
+
+        form {
+            position: relative;
+        }
+
+        .search-submit {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            width: 50px;
+            height: 50px;
+            background-color: $color-primary;
+            padding: 0;
+            border: none;
+
+            i {
+                margin: 0;
+            }
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    &.form-left {
+        .oxence-search-form {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    &.show-search {
+        .oxence-search-form {
+            opacity: 1;
+            visibility: visible;
+            transform: scale3d(1, 1, 1);
+            text-align: left;
+        }
+
+        .close {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+
+        .open {
+            opacity: 0;
+            transform-origin: center;
+            transform: scale(0);
+            transition: 0s;
+        }
+    }
+}

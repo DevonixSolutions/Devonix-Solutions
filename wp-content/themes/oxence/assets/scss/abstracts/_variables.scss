@@ -1,0 +1,32 @@
+// Font Family
+$font-primary: var(--oxence-primary-font);
+$font-secondary: var(--oxence-secondary-font);
+
+$color-primary: var(--oxence-primary-color);
+$color-secondary: var(--oxence-secondary-color);
+$color-headline: var(--oxence-headline-color);
+$color-body: var(--oxence-body-color);
+$color-border: var(--oxence-border-color);
+$color-light: var(--oxence-light-color);
+$color-white: var(--oxence-white-color);
+
+// Breakpoints.
+$breakpoints: (
+    md: 768px,
+    lg: 1025px,
+    c480: 480px,
+    c1200: 1201px,
+    c1350: 1350px,
+    c1367: 1367px,
+    c1400: 1400px,
+);
+
+// Grid Breakpoint
+$grid-breakpoints: (
+    sm: 0,
+    md: 768px,
+    lg: 1025px,
+);
+
+// Grid Column
+$columns: 12;

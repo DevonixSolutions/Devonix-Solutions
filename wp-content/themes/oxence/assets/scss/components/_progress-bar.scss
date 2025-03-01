@@ -1,0 +1,74 @@
+/** ===== Progress Bar ===== **/
+.oxence-progress-bar {
+    .progress-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-headline;
+        font: {
+            family: $font-primary;
+            size: 20px;
+            weight: 500;
+        }
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .elementor-counter-number::after {
+        content: "%";
+    }
+
+    .elementor-progress-wrapper {
+        width: 100%;
+        height: 7px;
+        background-color: $color-border;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+        .elementor-progress-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: $color-primary;
+            width: 0;
+            transition: width 1.5s;
+            height: auto;
+        }
+    }
+
+    .progress-chart {
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        line-height: 1;
+
+        .elementor-counter-number {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font: {
+                family: $font-secondary;
+                size: 24px;
+                weight: 700;
+            }
+            color: $color-headline;
+        }
+    }
+
+    &.progress-circle {
+        .progress-header {
+            font-size: 18px;
+            margin-bottom: 0;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        canvas {
+            border-radius: 50%;
+        }
+    }
+}

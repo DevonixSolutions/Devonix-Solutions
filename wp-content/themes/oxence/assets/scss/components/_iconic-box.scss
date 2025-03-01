@@ -1,0 +1,207 @@
+/** ===== Iconic Box ===== **/
+.oxence-iconic-box {
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 1;
+    bottom: 0;
+
+    .box-title {
+        margin: 0;
+        line-height: 1.3;
+        transition: 0.3s;
+    }
+
+    .box-icon {
+        font-size: 60px;
+        color: $color-primary;
+        margin-bottom: 20px;
+        transition: 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description {
+        margin: 15px 0 0;
+        line-height: 1.8;
+        transition: 0.3s;
+    }
+
+    &.design-one,
+    &.design-three,
+    &.design-four {
+        .box-url {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+
+    &.design-one {
+        padding: 35px 25px;
+        background-color: $color-white;
+        border-radius: 7px;
+
+        .box-title {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            bottom: 10px;
+
+            .box-icon {
+                color: $color-white;
+
+                svg * {
+                    fill: $color-white;
+                }
+            }
+
+            .box-title,
+            .description {
+                color: $color-white;
+            }
+        }
+    }
+
+    &.design-two {
+        padding: 40px 30px 30px;
+        background-color: #16161c;
+        border-radius: 7px;
+
+        .box-icon {
+            color: $color-white;
+            margin-bottom: 25px;
+
+            svg * {
+                fill: $color-white;
+            }
+        }
+
+        .box-title {
+            color: $color-white;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .box-url {
+            display: inline-flex;
+            color: $color-white;
+            font-size: 40px;
+            line-height: 1;
+            margin-top: 25px;
+
+            i {
+                font-weight: 400;
+
+                &.fas {
+                    font-family: "Font Awesome 5 Pro";
+                }
+            }
+
+            svg * {
+                fill: $color-white;
+            }
+        }
+
+        .description {
+            color: $color-white;
+        }
+    }
+
+    &.design-three {
+        .box-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            font-size: 55px;
+            color: $color-white;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+
+            @include respond-below(md) {
+                height: 100px;
+                width: 100px;
+                font-size: 45px;
+            }
+
+            svg * {
+                fill: $color-white;
+            }
+
+            img {
+                max-width: 55px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-color: $color-primary;
+                border-radius: 50%;
+                transition: 0.3s;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: calc(100% + 25px);
+                height: calc(100% + 25px);
+                z-index: -2;
+                background-color: transparent;
+                border: 2px dashed $color-primary;
+                border-radius: 50%;
+                transition: 0.3s;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .box-index {
+                position: absolute;
+                color: #1e1e22;
+                left: -40px;
+                top: -30px;
+                transform: rotate(-45deg);
+                z-index: -3;
+                font-size: 70px;
+                font-weight: 700;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgba(#1e1e22, 0.15);
+                -webkit-text-fill-color: transparent;
+                transition: 0.3s;
+            }
+        }
+
+        .box-title {
+            font-size: 22px;
+        }
+
+        &:hover {
+            .box-icon {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .box-index {
+                    left: -50px;
+                    top: -40px;
+                }
+            }
+        }
+    }
+}
